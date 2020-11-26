@@ -1,0 +1,12 @@
+diff --git a/node_modules/rollup-plugin-typescript2/dist/rollup-plugin-typescript2.cjs.js b/node_modules/rollup-plugin-typescript2/dist/rollup-plugin-typescript2.cjs.js
+index 318007c..c0c4db1 100644
+--- a/node_modules/rollup-plugin-typescript2/dist/rollup-plugin-typescript2.cjs.js
++++ b/node_modules/rollup-plugin-typescript2/dist/rollup-plugin-typescript2.cjs.js
+@@ -25091,6 +25091,7 @@ function createFilter(context, pluginOptions, parsedConfig) {
+ }
+ 
+ function checkTsConfig(parsedConfig) {
++    return;
+     const module = parsedConfig.options.module;
+     if (module !== tsModule.ModuleKind.ES2015 && module !== tsModule.ModuleKind.ESNext)
+         throw new Error(`Incompatible tsconfig option. Module resolves to '${tsModule.ModuleKind[module]}'. This is incompatible with rollup, please use 'module: "ES2015"' or 'module: "ESNext"'.`);
