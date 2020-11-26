@@ -14,12 +14,11 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"postinstall": "patch-package",
 		"start": "tsdx watch",
 		"build": "tsdx build",
 		"test": "tsdx test --passWithNoTests",
 		"lint": "tsdx lint",
-		"prepare": "tsdx build",
+		"prepare": "patch-package && tsdx build",
 		"size": "size-limit",
 		"analyze": "size-limit --why"
 	},
